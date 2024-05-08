@@ -12,16 +12,23 @@ body {
 .abutton{
   margin: 40px;
   padding: 20px;
-  background-color: #252525;
-  color: #fff;
 }
 
-.abutton:hover{
-  background-color: #ccc;
-  color: #252525;
+.abutton:active{
+  animation-name: colorto;
+  animation-duration: 250ms;
 }
 
-
+@keyframes colorto {
+  from {
+    background-color: #252525;
+    color: #fff;
+  }
+  to{
+    background-color: #ccc;
+    color: #252525;
+  }
+}
 .abutton-scaling{
   border-radius: 8px;
   transition: all 100ms;
